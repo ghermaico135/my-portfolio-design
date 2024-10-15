@@ -1,8 +1,91 @@
 .topbar{
     width: 100%;
     height: 70px;
-    background-color: #15023a;
+    background-color:#fff ;
+    color:#15023a;
     position: fixed;
     top: 0;
     z-index: 2;
 }
+
+.active{
+    background-color: #2a292c;
+    color: #fff;
+}
+
+.wrapper{
+    padding: 10px 30px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    font-size: 40px;
+    font-weight: 700;
+    text-decoration: none;
+    color: inherit;
+    margin-right: 40px;
+}
+
+.itemContainer{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.icon{
+    font-size: 18px;
+    margin-right: 5px;
+   
+}
+
+.itemContainer span{
+    font-size:14px ;
+    font-weight:500 ;
+    transform-origin: left;
+}
+
+
+
+.humburger{
+    width: 32px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.humburger > span{
+    width: 100%;
+    height: 3px;
+    background-color: rgb(13, 12, 12);
+    font-size:14px ;
+    font-weight:500 ;
+    transform-origin: left;
+    transition: all 2s ease;
+}
+
+/* .humburger:first-child{
+    background-color: #fff;
+    transform: rotate(45deg);
+}
+
+.humburger:nth-child(2) {
+    opacity: 0;
+}
+
+.humburger:last-child{
+    background-color: #fff;
+    transform: rotate(-45deg);
+} */
+
+
+
+
