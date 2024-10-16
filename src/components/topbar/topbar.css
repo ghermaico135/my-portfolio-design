@@ -5,11 +5,12 @@
     color:#15023a;
     position: fixed;
     top: 0;
-    z-index: 2;
+    z-index: 3;
+    overflow-y: hidden;
 }
 
 .active{
-    background-color: #2a292c;
+    background-color: #15023a;
     color: #fff;
 }
 
@@ -51,40 +52,53 @@
     transform-origin: left;
 }
 
-
-
 .humburger{
+    border: 4px solid red;
     width: 32px;
     height: 25px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
+    overflow-y: hidden;
+    position: relative;
+    
 }
 
 .humburger > span{
     width: 100%;
     height: 3px;
-    background-color: rgb(13, 12, 12);
+    background-color: #15023a;
     font-size:14px ;
     font-weight:500 ;
-    transform-origin: left;
-    transition: all 2s ease;
+    transition: all 0.3s ease;
 }
 
-/* .humburger:first-child{
+.hamburger.active  span {
     background-color: #fff;
+  } 
+
+.line1 {
     transform: rotate(45deg);
+    position: absolute;
+    top: 50%;
+    background-color: inherit;
 }
 
-.humburger:nth-child(2) {
+.line2 {
     opacity: 0;
 }
 
-.humburger:last-child{
-    background-color: #fff;
+.line3 {
     transform: rotate(-45deg);
-} */
+    position: absolute;
+    top: 50%;
+    background-color: inherit;
+} 
+
+
+
+
 
 
 

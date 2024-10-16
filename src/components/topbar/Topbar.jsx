@@ -20,9 +20,9 @@ export default function Topbar({openMenu,setOpenMenu}) {
         </div>
         <div className="right">
           <div className="humburger" onClick={()=>setOpenMenu(!openMenu)}>
-              <span></span>
-              <span></span>
-              <span></span>  
+               <span className={openMenu ? "line1" : ""}></span>
+              <span className={openMenu ? "line2" : ""}></span>
+              <span className={openMenu ? "line3" : ""}></span>  
           </div>
         </div>
       </div>
