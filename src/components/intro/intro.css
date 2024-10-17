@@ -10,7 +10,7 @@
 }
 
 .right-intro{
-    flex: 0.5;
+    flex: 0.3;
     overflow: hidden;
     position: relative;
 
@@ -29,7 +29,7 @@
 }
 
 .introImg{
-    height: 90%; 
+    height: 70%; 
 }
 
 .wrapper-intro{
@@ -51,8 +51,13 @@
     font-size: 35px;
 }
 
-.wrapper-intro h1{
-    font-size: 25px;
+.wrapper-intro h3{
+    font-size: 30px;
+}
+
+.intro-span{
+    font-size: inherit;
+    color: crimson;
 }
 
 .intro-link{
