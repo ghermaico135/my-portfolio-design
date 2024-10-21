@@ -1,3 +1,78 @@
 .intro{
-    background-color: lightpink;
+    background-color: #fff;
+    display: flex;
+   
+}
+
+.left-intro{
+    flex: 0.7;
+    overflow: hidden;
+}
+
+.right-intro{
+    flex: 0.3;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.imgContainer{
+    width: 700px;
+    height: 700px;
+    background-color: rgb(249, 245, 246);
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+}
+
+.introImg{
+    height: 70%; 
+}
+
+.wrapper-intro{
+    width: 100%;
+    height: 100%;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+}
+
+.wrapper-intro h1{
+    font-size: 60px;
+    margin: 10px 0;
+}
+
+.wrapper-intro h2{
+    font-size: 35px;
+}
+
+.wrapper-intro h3{
+    font-size: 30px;
+}
+
+.intro-span{
+    font-size: inherit;
+    color: crimson;
+}
+
+.intro-link{
+    position: absolute;
+    bottom: 10px;
+    left: 30%;
+    animation: arrowBlink 2s infinite;
+}
+
+.downIcon{
+   width: 30px;
+}
+
+@keyframes arrowBlink {
+    100%{
+        opacity: 0;
+    }
 }
