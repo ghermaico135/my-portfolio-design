@@ -1,3 +1,34 @@
 .works{
-    background-color: lightgreen;
+    background-color: crimson;
+    overflow: hidden;
+   display: flex;
+   align-items: center;
+   justify-content: center;   
+}
+
+.slider{
+    width: 600px;
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    border: 4px solid green;
+}
+
+.container{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+
+}
+
+.item{
+    width: 700px;
+    height:100% ;
+    background-color: #fff;
+    border-radius: 20px;
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
