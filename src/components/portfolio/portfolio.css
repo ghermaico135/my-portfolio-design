@@ -1,3 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .portfolio{
-    background-color: skyblue;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio-heading{
+    font-size: 50px;
+    z-index: 1;
+    padding: 5px 10px 30px 10px;
+    overflow: hidden;
+}
+
+.portfolio-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   overflow-y: hidden; 
+    margin: 5px;
+    padding: 10px;
+    list-style: none; 
+   
+}
+
+.active{
+    background-color: #15023a;
+}
+
+.portfolio-container{
+   
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.items{
+    width: 220px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid lightblue;
+    margin: 5px;
+    position: relative;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+
+.items img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.items h3{
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    position:absolute;
+    z-index: 0;
+   
+}
+
+.items:hover{
+    background-color: #410da9;
+}
+
+.items img:hover{
+    opacity: 0.2;
+    z-index: 0;
+}
+
+.items h3:hover{
+    z-index: 1;
 }

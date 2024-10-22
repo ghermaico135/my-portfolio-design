@@ -5,7 +5,7 @@ export default function Menu({openMenu,setOpenMenu}) {
   return (
     <div className={`menu ${openMenu ? "active" : ""}`}>
         <ul className="menuItems">
-            <li className="menuList">
+            <li className="menuList" onClick={()=>setOpenMenu(!openMenu)}>
                 <a  className="menuLink" href="#intro"> Home</a>
                </li>
             <li className="menuList" onClick={()=>setOpenMenu(!openMenu)}>
