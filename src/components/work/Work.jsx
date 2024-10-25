@@ -15,36 +15,40 @@ export default function Work() {
       img:
         "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
     },
-    // {
-    //   id: "2",
-    //   icon: "./assets/globe.png",
-    //   title: "Mobile Application",
-    //   desc:
-    //     "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    //   img:
-    //     "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
-    // },
-    // {
-    //   id: "3",
-    //   icon: "./assets/writing.png",
-    //   title: "Branding",
-    //   desc:
-    //     "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    //   img:
-    //     "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
-    // },
+    {
+      id: "2",
+      icon: "./assets/globe.png",
+      title: "Mobile Application",
+      desc:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      img:
+        "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
+    },
+    {
+      id: "3",
+      icon: "./assets/writing.png",
+      title: "Branding",
+      desc:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      img:
+        "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+    },
   ];
 
-  const handleClick = (way) =>{
-    way === "left" ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1: 2) :
+  const handleClick = (direction) =>{
+    direction === "left" ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1: data.length - 1) :
     setCurrentSlide(currentSlide < data.length -1 ? currentSlide + 1 : 0);
   }
+
+  
+  // style={{transform:`translateX(-${currentSlide * 100}vw)`}}
   return (
     <div className="works" id="works">
-      <div className="slider" style={{transform:`translateX(- ${currentSlide * 100}vw)`}}>
-            <div className="container">
+      <div className="slider" >
+            <div className="container"  style={{ transform: `translateX(-${currentSlide * 100}vw)`,
+  width: `${data.length * 100}vw`, }} >
             {data.map(dataItem =>(
-            <div className="item">
+            <div className="item" key={dataItem.id}>
               <div className="work-left">
                 <div className="workleftContainer">
                     <div className="imgleftContainer">
