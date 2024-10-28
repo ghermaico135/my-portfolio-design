@@ -7,6 +7,7 @@
     top: 0;
     z-index: 3;
     overflow-y: hidden;
+    
 }
 
 .active{
@@ -24,6 +25,7 @@
 .left{
     display: flex;
     align-items: center;
+   
 }
 
 .logo{
@@ -96,7 +98,71 @@
     background-color: inherit;
 } 
 
+/* mobile responsive */
+@media screen and (max-width:768px){
+   
+    .topbar{
+        height: 70px; 
+        padding: 3px; 
+    }
+    .wrapper{
+       height: 100%;
+       padding: 0px;
+    }
 
+    .logo{
+        font-size: 14px;
+        margin-right:10px;
+        
+    }
+    .itemContainer{
+        margin-left: 5px;
+    }
+
+    .icon{
+        margin-right: 2px;
+    }
+
+    .itemContainer span{
+        font-size:9px ;
+       
+    }
+    
+    
+}
+
+/* tablet responsive */
+@media screen and (min-width: 768px)  {
+   
+    .topbar{
+        height: 70px; 
+        padding: 6px; 
+    }
+    .wrapper{
+       height: 100%;
+       padding: 10px 30px;
+    }
+
+    .logo{
+        font-size: 35px;
+        margin-right:14px;
+        
+    }
+    .itemContainer{
+        margin-left: 20px;
+    }
+
+    .icon{
+        margin-right: 5px;
+    }
+
+    .itemContainer span{
+        font-size:14px ;
+       
+    }
+    
+    
+}
 
 
 

@@ -31,9 +31,9 @@ export default function Intro() {
   return (
     <div className="intro" id="intro">
       <div className="left-intro">
-      <div className="imgContainer">
-        <img  className="introImg" src="assets/mike1.JPG" alt="" />
-      </div>
+          <div className="imgContainer">
+            <img  className="introImg" src="assets/mike1.JPG" alt="" />
+          </div>
       </div>
       <div className="right-intro">
         <div className="wrapper-intro">
@@ -48,7 +48,6 @@ export default function Intro() {
          
         </div>
        
-        
       </div>
     </div>
   )
