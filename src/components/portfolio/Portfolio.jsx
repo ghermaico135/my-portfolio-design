@@ -66,6 +66,7 @@ export default function Portfolio() {
         {
            data.map((dataItem) =>{
             return <li className="items" key={dataItem.id}>
+              {/* I need to add the link so takes us straight to the source code */}
               <img src={dataItem.img} alt="" />
               <h3>{dataItem.title}</h3>
         </li>
