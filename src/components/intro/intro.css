@@ -85,20 +85,27 @@
     .intro{
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
+       
     }
 
     .left-intro{
-        flex: 0.6
+        flex: 0.6;
+       
+    }
+
+    .right-intro{
+        flex: 0.4;
+        
     }
 
     .imgContainer{
-        width: 500px;
-        height: 500px;
+        width: 300px;
+        height: 300px;
     }
 
     .introImg{
-        height: 60%;
+        height: 80%;
     }
 
     .wrapper-intro{
@@ -128,16 +135,22 @@
 
 /* tablet responsive */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width:1024px) {
     .intro{
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     .left-intro{
        flex: 0.7;
+    }
+
+    .imgContainer{
+        width: 500px;
+        height: 500px;
+       
     }
 
     .introImg{

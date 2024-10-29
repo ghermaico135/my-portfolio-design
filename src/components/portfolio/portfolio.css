@@ -86,3 +86,49 @@
 .items h3:hover{
     z-index: 1;
 }
+
+/* mobile responsive */
+
+@media screen and (max-width:768px){
+    .portfolio-heading{
+        font-size: 30px;
+        padding: 2px 8px 20px 10px;
+        
+    }
+
+    .portfolio-menu{
+       
+        margin: 4px;
+        padding: 4px;
+    }
+
+    .portfolio-container{
+        width: 100%;
+        flex-direction:row;
+        object-fit: cover;
+     
+    }
+
+    .items{
+        width: 250px;
+        height: 100px;
+       
+    }
+
+
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){
+    .portfolio-heading{
+        font-size: 35px;
+        padding: 4px 8px 25px 10px;
+      
+    }
+
+    .items{
+        width: 220px;
+        height: 170px;
+       
+    }
+
+ }

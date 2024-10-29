@@ -10,3 +10,30 @@
 .active{
     background-color: #15023a;
 }
+
+/* mobile responsive */
+
+@media screen and (max-width:768px){ 
+    .portfolioList{
+        font-size: 12px;
+        margin-right: 3px;
+        padding: 8px;
+
+    }
+
+
+}
+
+
+/* tablet responsive */
+
+@media screen and (min-width:768px) and (max-width:1024px){ 
+    .portfolioList{
+        font-size: 14px;
+        margin-right: 50px;
+        padding: 15px;
+
+    }
+
+
+}
